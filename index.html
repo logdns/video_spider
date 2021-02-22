@@ -95,7 +95,7 @@ if(window.XMLHttpRequest){
   }
 else{// code for IE6, IE5
 xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");}
-xmlhttp.open("GET","https://dy.pages.dev/video/?url="+v,false);
+xmlhttp.open("GET","https://dy.pages.dev/index.php/?url="+v,false);
 xmlhttp.send();
 var jsonObj = JSON.parse(xmlhttp.responseText); 
 console.log(jsonObj);
